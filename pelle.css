@@ -1,0 +1,122 @@
+@media only screen and (min-width: 600px) {
+  section.Top {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
+  }
+}
+
+h1, .Bottom, h2, nav, footer, article {
+  padding: 2vh 2vh;
+}
+
+h1, h2, nav, footer {
+  text-align: center;
+}
+
+article {
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 1vh;
+}
+
+section.Bottom img {
+  display: inline-block;
+}
+
+img.dalmatian {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+}
+
+img.football {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+header {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+a {
+  background-color: white;
+  color: hsl(90, 0%, 30%, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  font-size: 2rem;
+  margin-left: 3vh;
+}
+
+footer {
+  font-size: 1.5rem;
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+label {
+  margin: 1vh 1vh 0 1vh;
+}
+
+input, select, textarea {
+  margin: 0 1vh 0 1vh;
+}
+
+legend {
+  font-weight: bold;
+}
+
+@media (min-width:600px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  legend {
+    grid-column: 1;
+    text-align: right;
+  }
+
+  input, select, textarea {
+    grid-column: 2/-1;
+    margin: 1vh 1vh;
+  }
+
+  input {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 20px;
+  }
+}
